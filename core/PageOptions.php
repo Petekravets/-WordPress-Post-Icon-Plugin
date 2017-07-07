@@ -7,18 +7,9 @@
  */
 
 namespace core;
-register_uninstall_hook( __FILE__, array( 'PageOptions', 'uninstall' ) );
 
 class PageOptions extends App
 {
-
-    /**
-     * Callback-метод
-     * Під час видалення плагіну видаляєм всі поля, що були занесені в БД
-     */
-    public function uninstall() {
-        delete_option('pi_options');
-    }
 
     public function __construct()
     {
