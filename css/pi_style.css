@@ -1,0 +1,11 @@
+.dashicons {
+    font-size: 30px;
+}
+
+.dashicons.left{
+    margin-right: 12px;
+}
+.dashicons.right{
+
+    margin-left: 5px;
+}
