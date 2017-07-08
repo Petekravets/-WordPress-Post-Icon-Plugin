@@ -6,7 +6,7 @@ Plugin URI: https://github.com/Petekravets/-WordPress-Post-Icon-Plugin
 Author: Петро
 Author URI: https://github.com/Petekravets
 */
-require __DIR__ . '/autoload.php';
+require __DIR__ . '/inc/autoload.php';
 
 $page_options = new core\PageOptions();
 $post_icon = new core\PostIcon();
