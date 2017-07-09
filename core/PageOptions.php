@@ -72,7 +72,9 @@ class PageOptions extends App
      */
     public function display_ids_option()
     {
-        echo '<input type="text" name="pi_options[pi_options_ids]" id="pi_options_ids" value="'. esc_attr($this->option['pi_options_ids']) .'" class="regular_text">';
+        echo '<input type="text" name="pi_options[pi_options_ids]" id="pi_options_ids" value="'.
+                esc_attr($this->option['pi_options_ids'])
+            .'" class="regular_text">';
     }
 
     /**
@@ -81,7 +83,9 @@ class PageOptions extends App
      */
     public function display_class_option()
     {
-        echo '<input type="text" name="pi_options[pi_options_class]" id="pi_options_class" value="' . esc_attr($this->option['pi_options_class']) .'" class="regular_text">';
+        echo '<input type="text" name="pi_options[pi_options_class]" id="pi_options_class" value="' .
+                esc_attr($this->option['pi_options_class']) .
+            '" class="regular_text">';
     }
 
     /**
@@ -90,7 +94,9 @@ class PageOptions extends App
      */
     public function display_active_option()
     {
-        echo '<input type="checkbox" name="pi_options[pi_options_active]" id="pi_options_active" value="1" '. checked($this->option['pi_options_active'], true, 0) . ' class="regular_text">';
+        echo '<input type="checkbox" name="pi_options[pi_options_active]" id="pi_options_active" value="1" '.
+                checked($this->option['pi_options_active'], true, 0)
+            . ' class="regular_text">';
     }
 
     /**
